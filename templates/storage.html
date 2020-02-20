@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<ul class="list-group">
+    <h1>STORAGE</h1>
+    {% for st in storage %}
+    <li class="list-group-item"><a href="/storage/{{st.id}}">{{st.title}}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}
